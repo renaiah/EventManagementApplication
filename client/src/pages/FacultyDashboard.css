@@ -1,0 +1,232 @@
+/* Faculty Dashboard Styles */
+.faculty-dashboard {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  color: #333;
+}
+
+.faculty-dashboard h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.faculty-dashboard .btn-danger {
+  padding: 8px 14px;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.faculty-dashboard .btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 18px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.tabs button:hover {
+  background: linear-gradient(90deg, #5a0fc4, #1a63e0);
+  transform: translateY(-2px);
+}
+
+/* Data Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table th {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.data-table td {
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Buttons inside tables */
+.data-table button {
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Beautiful Register Button */
+.data-table button.registerBtn {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  box-shadow: 0 4px 10px rgba(91, 134, 229, 0.3);
+}
+.data-table button.registerBtn:hover {
+  background: linear-gradient(90deg, #2ebf91, #36d1dc);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(54, 209, 220, 0.4);
+}
+
+/* Beautiful Cancel Button */
+.data-table button.cancelBtn {
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  box-shadow: 0 4px 10px rgba(255, 126, 179, 0.3);
+}
+.data-table button.cancelBtn:hover {
+  background: linear-gradient(90deg, #ff6a88, #ff99ac);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(255, 118, 140, 0.4);
+}
+
+/* Feedback Button */
+.data-table .feedbackBtn {
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+}
+.data-table .feedbackBtn:hover {
+  background: linear-gradient(90deg, #00a389, #7fb52e);
+  transform: scale(1.05);
+}
+
+/* Feedback Form (if you ever add one on faculty side) */
+.feedback-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-inline: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feedback-form h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-bottom: 12px;
+  resize: vertical;
+}
+
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.rating-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.rating-input input {
+  width: 60px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.feedback-form button {
+  padding: 10px 16px;
+  background: linear-gradient(90deg, #00b09b, #96c93d);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-right: 10px;
+}
+
+.feedback-form button:hover {
+  background: linear-gradient(90deg, #00a389, #7fb52e);
+}
+
+.feedback-form .cancel-btn {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+}
+
+.feedback-form .cancel-btn:hover {
+  background: linear-gradient(90deg, #e73e65, #e43a25);
+}
+
+/* Disable styles */
+button:disabled,
+.data-table button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Optional: same rounded primary button look */
+.registerBtn {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.registerBtn:hover {
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.registerBtn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
